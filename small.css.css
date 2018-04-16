@@ -1,0 +1,115 @@
+@chartset"utf-8";
+/*css Document nr2(medium.css) and attach this file to my html document*/
+
+<!--* means Selects all elements-->
+@media screen and (max-width:720px)
+{
+
+*{
+	margin:0;
+	padding:0;
+}
+<!--rules för body-->
+body{
+	margin:0;
+	padding:0;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	background-color:cornsilk;
+}
+
+<!--html rules we are going to use.This is for older browser that not support HTML5-->
+header, section,footer,aside, article,figure{display: block;
+}
+<!--rules för container-->
+. container{
+	max-width:1000px;
+	margin:auto;
+	background-color:white;
+	<!--To be remove height:1500px;-->
+}
+header{
+	width:100%;
+	height:100px;
+	background-image:url(image/buttefly.jpg;<!--load the image and test in the browser-->
+}
+logo{
+	float:left;
+}
+<!--css to socialicons-->
+#socialicons{
+	float:right;
+	margin-top:5%;
+}
+.menubar1{
+	height:200px;<!--change 42px to 200px-->
+	width:80%;
+	<!--tabortbackground-color:#000000 <!--black-->-->
+	<!--tabort text-align:center;-->
+}
+
+.menubar ul{
+list-style:none;
+}
+.menubar1 ul li a{
+	float:none; <!--left-->
+	text-decoration:none;
+	color:#FFFFFF; <!--white-->
+	padding:0px;40 px;
+	text-align:center;
+	height:42px;
+	line-height:42px;<!--text vertically center-->
+	background-color:#094658;<!--blue-->
+	border-radius:5px;
+	font-weight:bold;
+	display:block;
+	width:100%;
+}
+
+.menubar1 ul li a hover:{
+	background-color:darkcyan;
+	border-radius:5px;
+	color:lightblue;
+}
+.menubar1 li a.active{
+	background-color:darkcyan;
+	border-radius:5px;
+	color:lightblue;
+
+}
+. content{
+	width:400px;
+	padding:20px;
+
+
+}
+. sidebarone{
+	width:300px;
+	padding:20px;
+	<!--container is 1000px divide in two parts content and sidebareone its equal the sum of 560+20+360+20-->
+
+}
+.justify{
+	text-align:justify;
+}
+
+.menubar2 ul{
+	list-style:none;
+	width:360px;
+	background-color:darkcyan;
+}
+
+.menubar2 ul li{
+	border:1px solid #000000;
+	padding:5px;
+}
+.menubar2 ul li a{
+	color:white;
+}
+footer{
+	clear:both;
+	height:40px;
+	background-image url(image/footer.jpg);
+	color:#FFFFFF;
+	width: 100%;
+}
+}<!--stänga mediaquery-->
